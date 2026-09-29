@@ -35,4 +35,4 @@ RUN composer install --no-dev --no-interaction --prefer-dist --optimize-autoload
 RUN chmod -R 777 storage bootstrap/cache
 
 # Jalankan server
-CMD ["sh", "-c", "php artisan migrate --force && php artisan serve --host=0.0.0.0 --port=${PORT:-8080}"]
+CMD ["sh", "-c", "php artisan migrate --seed --force && php artisan config:cache && php artisan route:cache && php -S 0.0.0.0:${PORT:-8080} -t public"]
