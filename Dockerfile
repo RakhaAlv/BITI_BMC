@@ -38,4 +38,4 @@ RUN composer install --no-dev --no-interaction --prefer-dist --optimize-autoload
 
 # 7. Expose Port & Command untuk menjalankan aplikasi
 EXPOSE 8000
-CMD php artisan migrate --seed --force && php artisan serve --host=0.0.0.0 --port=$PORT
+CMD ["sh", "-c", "php artisan migrate --seed --force && php artisan serve --host=0.0.0.0 --port=${PORT:-8080}"]
