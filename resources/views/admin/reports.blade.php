@@ -1,0 +1,1 @@
+<x-app-layout><x-page-head title="Laporan" :subtitle="$periode"/><a class="rounded bg-cyan-600 px-4 py-2 text-white" href="{{ route('admin.reports.export',['periode'=>$periode]) }}">Unduh CSV</a><div class="mt-6 rounded-xl bg-white p-5 shadow-sm"><x-ranking-table :rows="$rows->map(fn($r)=>['user'=>$r->user,'skor'=>['akhir'=>$r->skor_akhir]])"/></div></x-app-layout>

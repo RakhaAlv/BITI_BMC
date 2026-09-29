@@ -1,0 +1,1 @@
+<div class="dashboard-card rounded-xl bg-white p-5 shadow-sm ring-1 ring-slate-100"><p class="text-[11px] font-medium uppercase tracking-wider text-pink-500">{{ $label }}</p><p class="mt-3 text-3xl font-semibold text-slate-900">{{ $value }}</p>@isset($hint)<p class="mt-2 text-xs text-slate-400">{{ $hint }}</p>@endisset</div>

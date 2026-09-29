@@ -1,0 +1,1 @@
+<div class="mb-4"><div class="mb-1 flex justify-between text-sm"><span>{{ $label }}</span><b>{{ number_format($value,1) }}</b></div><div class="h-2 rounded-full bg-slate-100"><div class="h-2 rounded-full bg-pink-500" style="width:{{ min(100,max(0,($value / 5) * 100)) }}%"></div></div></div>
