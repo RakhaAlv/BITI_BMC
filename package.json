@@ -3,9 +3,10 @@
     "private": true,
     "type": "module",
     "scripts": {
-        "build": "vite build",
-        "dev": "vite"
-    },
+    "dev": "vite",
+    "build": "echo 'Skip Vercel Build'",
+    "vercel-build": "echo 'Skip Vercel Build'"
+},
     "devDependencies": {
         "@tailwindcss/forms": "^0.5.2",
         "@tailwindcss/vite": "^4.0.0",
