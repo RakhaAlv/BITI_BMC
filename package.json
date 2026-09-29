@@ -2,10 +2,10 @@
     "$schema": "https://www.schemastore.org/package.json",
     "private": true,
     "type": "module",
-    "scripts": {
+"scripts": {
     "dev": "vite",
-    "build": "echo 'Skip Vercel Build'",
-    "vercel-build": "echo 'Skip Vercel Build'"
+    "build": "echo 'Skip Build'",
+    "vercel-build": "echo 'Skip Build'"
 },
     "devDependencies": {
         "@tailwindcss/forms": "^0.5.2",
